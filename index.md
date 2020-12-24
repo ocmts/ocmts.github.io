@@ -12,6 +12,15 @@ export class Product extends Biz.ActiveRecord {
 }
 ```
 
+we define some initial products in src/init/Catalog/Public/Product.json
+
+```json
+[
+  { "name": "keybord A", "price": 100 },
+  { "name": "mouse B", "price": 102 }
+]
+```
+
 after we defined the classes, we deploy them into the cloud:
 
 ```sh
