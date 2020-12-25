@@ -35,6 +35,6 @@ In frontend code, we can query the products using:
 import * as Biz from '@ocmts/biz';
 import { Product } from '@/Catalog/Private/Product';
 
-const scene = Biz.newScene();
+const scene = new Biz.Scene();
 const products = await scene.query(Product, { name: 'mouse B' });
 ```
