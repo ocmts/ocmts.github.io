@@ -5,7 +5,7 @@ Backend code is boring, why not automate it. OCM allows you to only focus on fro
 We use a typescript class (src/Catalog/Public/Product.ts) to represent a table
 
 ```ts
-import * as Biz from '@octms/biz';
+import * as Biz from '@ocmts/biz';
 
 export class Product extends Biz.ActiveRecord {
   public name: string;
@@ -28,4 +28,12 @@ Then deploy them into the cloud:
 ocm model update
 ```
 
+In frontend code, we can query the products using:
 
+```ts
+import * as Biz from '@ocmts/biz';
+import { Product } from '@/Catalog/Public/Product';
+
+const scene = Biz.newScene();
+const products = await scene.query(Product, { name: 'mouse B' });
+```
