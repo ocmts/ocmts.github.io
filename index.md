@@ -29,7 +29,7 @@ Then deploy them into the cloud:
 ocm model update
 ```
 
-In frontend code, we can query the products using:
+In frontend code (src/Catalog/Ui/React/demo.tsx), we can query the products using:
 
 ```ts
 import * as Biz from '@ocmts/biz';
