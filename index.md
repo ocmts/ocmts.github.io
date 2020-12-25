@@ -44,3 +44,7 @@ const products = await scene.query(Product, { name: 'mouse B' });
 Cloud service providers want to lock you in via their lambda and other private offerings. OCM allow you to use plain old typescript object, instead of private APIs to talk to the cloud services.
 
 ![cloud-neutral](./cloud-neutral.drawio.png)
+
+## Is it free?
+
+OCM will soon be open sourced under the Apache License. If you are interested in, join our [slack channel](https://join.slack.com/t/ocm-sm75180/shared_invite/zt-kpch1ee8-9tj_5eUgdbwewfhBkj3kWQ).
