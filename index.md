@@ -43,4 +43,4 @@ const products = await scene.query(Product, { name: 'mouse B' });
 
 Cloud service providers want to lock you in via their lambda and other private offerings. OCM allow you to use plain old typescript object, instead of private APIs to talk to the cloud services.
 
-
+![cloud-neutral](./cloud-neutral.drawio.png)
