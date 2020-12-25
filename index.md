@@ -7,6 +7,7 @@ We use a typescript class (src/Catalog/Public/Product.ts) to represent a table
 ```ts
 import * as Biz from '@ocmts/biz';
 
+@Biz.published
 export class Product extends Biz.ActiveRecord {
   public name: string;
   public price: number;
