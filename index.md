@@ -2,7 +2,7 @@
 
 Backend code is boring, why not automate it. OCM allows you to only focus on frontend logic. All you need to do is to define a couple of typescript classes, type a cli command to get a working application, including both frontend and backend. OCM will deploy services to the cloud and create database tables. Here is a quick example:
 
-We use a typescript class (src/Catalog/Public/Product.ts) to represent a table
+We use a typescript class (src/Catalog/Private/Product.ts) to represent a table
 
 ```ts
 import * as Biz from '@ocmts/biz';
@@ -14,7 +14,7 @@ export class Product extends Biz.ActiveRecord {
 }
 ```
 
-Define some initial products (src/init/Catalog/Public/Product.json)
+Define some initial products (src/init/Catalog/Private/Product.json)
 
 ```json
 [
@@ -33,7 +33,7 @@ In frontend code, we can query the products using:
 
 ```ts
 import * as Biz from '@ocmts/biz';
-import { Product } from '@/Catalog/Public/Product';
+import { Product } from '@/Catalog/Private/Product';
 
 const scene = Biz.newScene();
 const products = await scene.query(Product, { name: 'mouse B' });
