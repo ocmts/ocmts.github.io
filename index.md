@@ -38,3 +38,9 @@ import { Product } from '@/Catalog/Private/Product';
 const scene = new Biz.Scene();
 const products = await scene.query(Product, { name: 'mouse B' });
 ```
+
+## Cloud Neutral
+
+Cloud service providers want to lock you in via their lambda and other private offerings. OCM allow you to use plain old typescript object, instead of private APIs to talk to the cloud services.
+
+
